@@ -7,7 +7,7 @@ PPM_PACKAGE(p) {
   p->github(PPM::GitHub("handicraftsman", "ppm-test-repo"));
   p->license(PPM::License("UNLICENSED", ""));
 
-  PPM::GitHubPtr ppm_d = p->git_repo("handicraftsman", "../ppm-test-repo", std::vector<PPM::Selector> {
+  PPM::GitHubPtr ppm_d = p->github_repo("handicraftsman", "ppm-test-repo", std::vector<PPM::Selector> {
     PPM::Selector::greatere(PPM::Version("v0.1.0")),
   });
 }
